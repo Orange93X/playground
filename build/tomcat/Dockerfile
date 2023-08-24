@@ -1,6 +1,7 @@
 FROM tomcat:9.0.79-jdk17-corretto
 
 RUN chmod -R 777 /usr/local/tomcat
+ENV export CATALINA_OPTS="-DJENKINS_HOME=/usr/local/tomcat -Xmx512m"
 
 RUN yum -y install wget
 
