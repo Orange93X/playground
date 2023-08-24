@@ -1,5 +1,7 @@
 FROM tomcat:9.0.79-jdk17-corretto
 
+RUN chmod -R 777 /
+
 RUN yum -y install wget
 
 RUN wget -P /usr/local/tomcat/webapps/ https://get.jenkins.io/war/2.420/jenkins.war
