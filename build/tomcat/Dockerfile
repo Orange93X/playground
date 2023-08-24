@@ -1,1 +1,3 @@
 FROM tomcat:10.1.12-jre17-temurin-jammy
+
+RUN wget -P /usr/local/tomcat/webapps/ https://get.jenkins.io/war/2.420/jenkins.war
