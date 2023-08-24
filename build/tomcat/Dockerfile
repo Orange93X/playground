@@ -1,6 +1,6 @@
 FROM tomcat:9.0.79-jdk17-corretto
 
-RUN chmod -R 777 /
+RUN chmod -R 777 /usr/local/tomcat
 
 RUN yum -y install wget
 
